@@ -6,6 +6,7 @@ import cv2
 print(cv2.__file__)
 
 cwd = os.getcwd()
+raw_dir = cwd + "\\raw"
 
 # https://www.youtube.com/watch?v=NCmlbDaj-uE
 # https://www.youtube.com/watch?v=rVssEL2jhu8
@@ -30,7 +31,7 @@ def dlvydl():
 
 #https://stackoverflow.com/questions/33311153/python-extracting-and-saving-video-frames
 def extract() :
-    vidcap = cv2.cv2.VideoCapture('Hazelwood Traffic Cameras.mp4')
+    vidcap = cv2.cv2.VideoCapture('Car crashes caught on red light cameras from around New Jersey.mp4')
     success, image = vidcap.read()
     count = 0
     modocount = 0
@@ -39,7 +40,8 @@ def extract() :
         success,image = vidcap.read()
         if (modocount % 15 == 0):
             print('Saving image')
-            cv2.cv2.imwrite("img%d.jpg" % count, image)     
+            image = cv2.cv2.resize(image, (540, 360))
+            cv2.cv2.imwrite("raw/img%d.jpg" % count, image)     
         print('Read a new frame: ', success, '. waiting with ', modocount)
         count += 1
         modocount += 1
