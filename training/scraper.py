@@ -38,11 +38,12 @@ def extract() :
     while success:
         success,image = vidcap.read()
         if (modocount % 15 == 0):
-            cv2.cv2.imwrite("raw/img%d.jpg" % count, image)     
-            print('Read a new frame: ', success)
-            count += 1
-            modocount += 1
+            print('Saving image')
+            cv2.cv2.imwrite("img%d.jpg" % count, image)     
+        print('Read a new frame: ', success, '. waiting with ', modocount)
+        count += 1
+        modocount += 1
 
 if __name__ == "__main__":
-    dlvydl()
+    # dlvydl()
     extract()
