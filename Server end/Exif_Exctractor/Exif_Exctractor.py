@@ -12,3 +12,5 @@ with open('Ledger.csv', mode='w') as ledger:
     ledger = csv.writer(ledger, delimiter =',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
     ledger.writerow([dateTime,GPS])
+
+
