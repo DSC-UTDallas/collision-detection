@@ -8,10 +8,15 @@ Since red light cameras were recently banned in Texas, people may continue speed
 
 View our [demo video](https://youtube.com)!
 
-
+## Running the code
+1. Clone the repository.
+2. You can compile the Flutter app from source, or download it `here`.
+3. A frozen model is found in `...`. Simply run `...` to see the inferencer in action. 
+4. Now, the inferencer can be fed realtime data. Press ^C anytime to quit.
+5. If a collision is detected, the server is contacted to update the Firebase database. The Flutter app will be dependent on the server to detect a change, and if the collision occurred nearby, an alternate route is provided. Different vehicles will be provided different routes, to minimize congestion.
+6. At the same time, emergency vehicles are contacted with the fastest route to the collision site.
 
 ## Summary
-
 
 
 ### Problem that we want to solve
