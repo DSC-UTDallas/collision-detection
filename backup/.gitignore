@@ -1,0 +1,5 @@
+log/*
+!log/README
+*graph.pb*
+*model.pb*
+model.ckpt*
