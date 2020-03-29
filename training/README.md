@@ -1,6 +1,9 @@
 ### What this is
-Stuff for data scraping and model training goes here
+Data scraping (`scraper.py`) and model training (`*.ipynb`) goes here.
 
+
+Structure:
+```
 ├── images
 │   ├── test
 │   └── train
@@ -10,3 +13,4 @@ Stuff for data scraping and model training goes here
 │       └── variables
 └── training
     └── log
+```
