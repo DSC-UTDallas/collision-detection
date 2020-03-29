@@ -1,4 +1,7 @@
-<h1 align="center">collision-detection</h1>
+<h1 align="center">
+  <span>🚘</span><br/>
+  collision-detection
+</h1>
 
 collision-detection is our idea to prevent fatalities due to automobile accidents by detecting collisions and rerouting nearby vehicles, thereby allowing emergency vehicles to approach the scene as fast as possible. 
 
