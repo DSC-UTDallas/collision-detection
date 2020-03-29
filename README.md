@@ -1,6 +1,8 @@
 # collision-detection
 
-collision-detection is our idea to 
+collision-detection is our idea to prevent fatalities due to automobile accidents by detecting collisions and rerouting nearby vehicles, thereby allowing emergency vehicles to approach the scene as fast as possible. 
+
+Since red light cameras were recently banned in Texas, people may continue speeding to pass a red light signal, which is the cause of nearly 165,000 accidents; of which 50% of major collisions occur at intersections.
 
 ## Demo
 
@@ -31,11 +33,18 @@ Our solution uses an app to contact drivers approaching the accident, which uses
 
 ## User testing
 
+## Development overview
+1. The first step was automobile detection. Using the SSD Inception v2 model as a fine-tuning checkpoint, supervised training was used through labeled images for detecting cars. 
+
+2. A naive approach is a rule-based approach, by noticing intersection of car models through object detection in real time. However, we wanted to take it a step further by implementing a time-based model that uses a set of images to incorporate movement of cars.
+
+3. 
+
 ## Future plans
 
-We are planning on incorporating extra features, such as [?]
+We are planning on incorporating extra features, such as [-]
 
-In terms of deployment, we hope to release a beta version by [?] 
+In terms of deployment, we hope to release a beta version by [-] 
 
 ## Thanks!
-Thank you to the University of Texas at Dallas, Google Developer Student Club for providing helpful workshops and weekly meetings!
+In the hectic time of the ongoing outbreak, we want to extend our thanks to Google and the UTD Developer Student Club in being proactive by providing helpful online workshops, meetings, and collaboration tools. Thank you!
